@@ -1,0 +1,15 @@
+
+LINE			INDEX			TOKENS				MESSAGE			
+1	int x = 21 ; Valid			
+2	int z = x + 7 ; Valid			
+3	int za = x - 7 ; Valid			
+4	int zb = x * 7 ; Valid			
+5	int zc = x - 2 ; Valid			
+6	Valid			
+6	Valid			
+6	Valid			
+7	tignan ( " Results:  " ) ; Valid			
+8	tignan ( z ) ; Valid			
+9	tignan ( za ) ; Valid			
+10	tignan ( zb ) ; Valid			
+11	tignan ( zc ) ; Valid			
