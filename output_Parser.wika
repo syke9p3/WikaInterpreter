@@ -1,15 +1,17 @@
 
 LINE			INDEX			TOKENS				MESSAGE			
-1	int x = 21 ; Valid			
-2	int z = x + 7 ; Valid			
-3	int za = x - 7 ; Valid			
-4	int zb = x * 7 ; Valid			
-5	int zc = x - 2 ; Valid			
-6	Valid			
-6	Valid			
-6	Valid			
-7	tignan ( " Results:  " ) ; Valid			
-8	tignan ( z ) ; Valid			
-9	tignan ( za ) ; Valid			
-10	tignan ( zb ) ; Valid			
-11	tignan ( zc ) ; Valid			
+1	int x , y = 1 + 2 - 3 , ; Valid			
+2	c = 4 ; Valid			
+3	string greetings = " hello " + 1 ; Valid			
+4	int x = 1 ; Valid			
+5	int y = 2 + 3 + 5 ; Valid			
+6	c = a + b ; Valid			
+7	int a = x + y , ; Valid			
+8	int y = 2 , ; Valid			
+9	int z ; Valid			
+10	y = Invalid			Expected constant/expressionbut got keyword 'kunin'
+10	Invalid			Unexpected token  '('
+10	Invalid			Unexpected token  ')'
+10	Valid			
+11	tignan ( greetings ) ; Valid			
+12	tignan ( " world " ) ; Valid			

@@ -2,90 +2,120 @@
 LINE			INDEX			TOKEN				TYPE			DESCRIPTION		
 1			0			int				dataType			Integer Data Type
 1			1			x				IDENTIFIER		Identifier x
-1			2			=				ASSIGN_OP			Assignment Operator
-1			3			21				CONSTANT		Integer Constant Value
-1			4			;				SEMICOLON				Semicolon
-1			5			
+1			2			,				DELIMITER				Comma
+1			3			y				IDENTIFIER		Identifier y
+1			4			=				ASSIGN_OP			Assignment Operator
+1			5			1				CONSTANT		Integer Constant Value
+1			6			+				ARITH_OP				Addition Symbol
+1			7			2				CONSTANT		Integer Constant Value
+1			8			-				ARITH_OP				Subraction Symbol, line
+1			9			3				CONSTANT		Integer Constant Value
+1			10			,				DELIMITER				Comma
+1			11			z				IDENTIFIER		Identifier z
+1			12			=				ASSIGN_OP			Assignment Operator
+1			13			"				DELIMITER				Delimiter Double Quotation
+1			14			hello				CONSTANT		String Constant Value
+1			15			"				DELIMITER				Delimiter Double Quotation
+1			16			+				ARITH_OP				Addition Symbol
+1			17			7				CONSTANT		Integer Constant Value
+1			18			;				SEMICOLON				Semicolon
+1			19			
 				New Line Character
-2			6			int				dataType			Integer Data Type
-2			7			z				IDENTIFIER		Identifier z
-2			8			=				ASSIGN_OP			Assignment Operator
-2			9			x				IDENTIFIER		Identifier x
-2			10			+				ARITH_OP				Addition Symbol
-2			11			7				CONSTANT		Integer Constant Value
-2			12			;				SEMICOLON				Semicolon
-2			13			
+2			20			c				IDENTIFIER		Identifier c
+2			21			=				ASSIGN_OP			Assignment Operator
+2			22			4				CONSTANT		Integer Constant Value
+2			23			;				SEMICOLON				Semicolon
+2			24			
 				New Line Character
-3			14			int				dataType			Integer Data Type
-3			15			za				IDENTIFIER		Identifier za
-3			16			=				ASSIGN_OP			Assignment Operator
-3			17			x				IDENTIFIER		Identifier x
-3			18			-				ARITH_OP				Subraction Symbol, line
-3			19			7				CONSTANT		Integer Constant Value
-3			20			;				SEMICOLON				Semicolon
-3			21			
+3			25			string				dataType			String Data Type
+3			26			greetings				IDENTIFIER		Identifier greetings
+3			27			=				ASSIGN_OP			Assignment Operator
+3			28			"				DELIMITER				Delimiter Double Quotation
+3			29			hello				CONSTANT		String Constant Value
+3			30			"				DELIMITER				Delimiter Double Quotation
+3			31			+				ARITH_OP				Addition Symbol
+3			32			1				CONSTANT		Integer Constant Value
+3			33			;				SEMICOLON				Semicolon
+3			34			
 				New Line Character
-4			22			int				dataType			Integer Data Type
-4			23			zb				IDENTIFIER		Identifier zb
-4			24			=				ASSIGN_OP			Assignment Operator
-4			25			x				IDENTIFIER		Identifier x
-4			26			*				ARITH_OP				Multiplication Symbol, line
-4			27			7				CONSTANT		Integer Constant Value
-4			28			;				SEMICOLON				Semicolon
-4			29			
+4			35			int				dataType			Integer Data Type
+4			36			x				IDENTIFIER		Identifier x
+4			37			=				ASSIGN_OP			Assignment Operator
+4			38			1				CONSTANT		Integer Constant Value
+4			39			;				SEMICOLON				Semicolon
+4			40			
 				New Line Character
-5			30			int				dataType			Integer Data Type
-5			31			zc				IDENTIFIER		Identifier zc
-5			32			=				ASSIGN_OP			Assignment Operator
-5			33			x				IDENTIFIER		Identifier x
-5			34			-				ARITH_OP				Subraction Symbol, line
-5			35			2				CONSTANT		Integer Constant Value
-5			36			;				SEMICOLON				Semicolon
-5			37			
+5			41			int				dataType			Integer Data Type
+5			42			y				IDENTIFIER		Identifier y
+5			43			=				ASSIGN_OP			Assignment Operator
+5			44			2				CONSTANT		Integer Constant Value
+5			45			+				ARITH_OP				Addition Symbol
+5			46			3				CONSTANT		Integer Constant Value
+5			47			+				ARITH_OP				Addition Symbol
+5			48			5				CONSTANT		Integer Constant Value
+5			49			;				SEMICOLON				Semicolon
+5			50			
 				New Line Character
-6			38			/*				COMMENT				Multi Line Comment Start
-6			39			comment				COMMENT				Multi line comment
-6			40			*/				COMMENT				Multi Line Comment End
-6			41			
+6			51			c				IDENTIFIER		Identifier c
+6			52			=				ASSIGN_OP			Assignment Operator
+6			53			a				IDENTIFIER		Identifier a
+6			54			+				ARITH_OP				Addition Symbol
+6			55			b				IDENTIFIER		Identifier b
+6			56			;				SEMICOLON				Semicolon
+6			57			
 				New Line Character
-7			42			tignan				KEYWORD			Output Statement
-7			43			(				DELIMITER				Left Parenthesis
-7			44			"				DELIMITER				Delimiter Double Quotation
-7			45			Results: 				CONSTANT		String Constant Value
-7			46			"				DELIMITER				Delimiter Double Quotation
-7			47			)				DELIMITER				Right Parenthesis
-7			48			;				SEMICOLON				Semicolon
-7			49			
+7			58			int				dataType			Integer Data Type
+7			59			a				IDENTIFIER		Identifier a
+7			60			=				ASSIGN_OP			Assignment Operator
+7			61			x				IDENTIFIER		Identifier x
+7			62			+				ARITH_OP				Addition Symbol
+7			63			y				IDENTIFIER		Identifier y
+7			64			,				DELIMITER				Comma
+7			65			z				IDENTIFIER		Identifier z
+7			66			=				ASSIGN_OP			Assignment Operator
+7			67			1				CONSTANT		Integer Constant Value
+7			68			+				ARITH_OP				Addition Symbol
+7			69			a				IDENTIFIER		Identifier a
+7			70			+				ARITH_OP				Addition Symbol
+7			71			b				IDENTIFIER		Identifier b
+7			72			;				SEMICOLON				Semicolon
+7			73			
 				New Line Character
-8			50			tignan				KEYWORD			Output Statement
-8			51			(				DELIMITER				Left Parenthesis
-8			52			z				IDENTIFIER		Identifier z
-8			53			)				DELIMITER				Right Parenthesis
-8			54			;				SEMICOLON				Semicolon
-8			55			
+8			74			int				dataType			Integer Data Type
+8			75			y				IDENTIFIER		Identifier y
+8			76			=				ASSIGN_OP			Assignment Operator
+8			77			2				CONSTANT		Integer Constant Value
+8			78			,				DELIMITER				Comma
+8			79			y				IDENTIFIER		Identifier y
+8			80			;				SEMICOLON				Semicolon
+8			81			
 				New Line Character
-9			56			tignan				KEYWORD			Output Statement
-9			57			(				DELIMITER				Left Parenthesis
-9			58			za				IDENTIFIER		Identifier za
-9			59			)				DELIMITER				Right Parenthesis
-9			60			;				SEMICOLON				Semicolon
-9			61			
+9			82			int				dataType			Integer Data Type
+9			83			z				IDENTIFIER		Identifier z
+9			84			;				SEMICOLON				Semicolon
+9			85			
 				New Line Character
-10			62			tignan				KEYWORD			Output Statement
-10			63			(				DELIMITER				Left Parenthesis
-10			64			zb				IDENTIFIER		Identifier zb
-10			65			)				DELIMITER				Right Parenthesis
-10			66			;				SEMICOLON				Semicolon
-10			67			
+10			86			y				IDENTIFIER		Identifier y
+10			87			=				ASSIGN_OP			Assignment Operator
+10			88			kunin				KEYWORD			Input Statement
+10			89			(				DELIMITER				Left Parenthesis
+10			90			)				DELIMITER				Right Parenthesis
+10			91			;				SEMICOLON				Semicolon
+10			92			
 				New Line Character
-11			68			tignan				KEYWORD			Output Statement
-11			69			(				DELIMITER				Left Parenthesis
-11			70			zc				IDENTIFIER		Identifier zc
-11			71			)				DELIMITER				Right Parenthesis
-11			72			;				SEMICOLON				Semicolon
-11			73			
+11			93			tignan				KEYWORD			Output Statement
+11			94			(				DELIMITER				Left Parenthesis
+11			95			greetings				IDENTIFIER		Identifier greetings
+11			96			)				DELIMITER				Right Parenthesis
+11			97			;				SEMICOLON				Semicolon
+11			98			
 				New Line Character
-12			74			
-				New Line Character
-13			75			
+12			99			tignan				KEYWORD			Output Statement
+12			100			(				DELIMITER				Left Parenthesis
+12			101			"				DELIMITER				Delimiter Double Quotation
+12			102			world				CONSTANT		String Constant Value
+12			103			"				DELIMITER				Delimiter Double Quotation
+12			104			)				DELIMITER				Right Parenthesis
+12			105			;				SEMICOLON				Semicolon
+12			106			
 				New Line Character

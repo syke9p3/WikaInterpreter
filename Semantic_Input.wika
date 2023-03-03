@@ -1,0 +1,12 @@
+int x, y = 1 + 2 - 3, z = "hello" + 7;
+c = 4;
+string greetings = "hello" + 1;
+int x = 1;
+int y = 2 + 3 + 5;
+c = a + b;
+int a = x + y, z = 1 + a + b;
+int y = 2, y;
+int z;
+y = kunin();
+tignan(greetings);
+tignan("world");

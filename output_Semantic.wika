@@ -1,3 +1,9 @@
 
 
 ERRORS
+Line 2 :	Invalid conversion from 'string' to 'int'
+Line 3 :	Multiple declarations for identifier/variable 'x'
+Line 4 :	Identifier/variable 'x' is not declared
+Line 6 :	Expected expression but got keyword 'habang'
+Line 11 :	Multiple declarations for identifier/variable 'repeat'
+Line 15 :	Identifier/variable 'age' is not declared

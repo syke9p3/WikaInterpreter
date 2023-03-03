@@ -23,7 +23,7 @@ Members:
 
 using namespace std;
 
-string fileName = "a_test.wika";
+string fileName = "Semantic_Input.wika";
 string outputFileLexer = "output_Lexer.wika";
 string outputFileParser = "output_Parser.wika";
 string outputFileSemantic = "output_Semantic.wika";
@@ -1469,7 +1469,7 @@ void analyze(vector<Statement> *statements)
 								}
 								else
 								{
-									cout << "Line " << statement.line << " : Invalid conversion from '" << dataType << "' to '" << var.type << endl;
+									cout << "Line " << statement.line << " : Invalid conversion from '" << dataType << "' to '" << var.type << "'" << endl;
 									statement.message = "Invalid conversion from '" + dataType + "' to '" + var.type + "'";
 									errors.push_back({statement.line, statement.message});
 									break;
@@ -1610,7 +1610,7 @@ void analyze(vector<Statement> *statements)
 								}
 								else
 								{
-									cout << "Line " << statement.line << " : Invalid conversion from '" << dataType << "' to '" << var.type << endl;
+									cout << "Line " << statement.line << " : Invalid conversion from '" << dataType << "' to '" << var.type << "'"<< endl;
 									statement.message = "Invalid conversion from '" + dataType + "' to '" + var.type + "'";
 									errors.push_back({statement.line, statement.message});
 								}
@@ -1626,9 +1626,9 @@ void analyze(vector<Statement> *statements)
 				}
 			}
 		}
-
-		symbol_table = solveVariables(symbol_table);
 	}
+
+	symbol_table = solveVariables(symbol_table);
 
 	cout << "\n\n"
 		 << "VARIABLE SYMBOL TABLE CONTENTS: " << endl;
@@ -1650,7 +1650,7 @@ int solveExpression(vector<Token> expression)
 	{
 
 		Token token = expression[0];
-		if (token.type == CONSTANT)
+		if (token.description == "Integer Constant Value")
 		{
 			return stoi(token.value);
 		}
@@ -1676,7 +1676,7 @@ int solveExpression(vector<Token> expression)
 		int leftValue, rightValue;
 
 		// Handle the left operand
-		if (left.type == CONSTANT)
+		if (left.description == "Integer Constant Value")
 		{
 			leftValue = stoi(left.value);
 		}
@@ -1687,7 +1687,7 @@ int solveExpression(vector<Token> expression)
 		}
 
 		// Handle the right operand
-		if (right.type == CONSTANT)
+		if (right.description == "Integer Constant Value")
 		{
 			rightValue = stoi(right.value);
 		}
@@ -1871,20 +1871,17 @@ void interOut(vector<Statement> *statements)
 					while (statement.tokens[j].value != ")")
 					{
 
-						if (statement.tokens[j+1].description == "String Constant Value")
+						if (statement.tokens[j + 1].description == "String Constant Value")
 						{
-							cout << "debug string == " << statement.tokens[j+1].value << endl;
-							outputAccumulator.push_back(statement.tokens[j+1].value);
+							cout << "debug string == " << statement.tokens[j + 1].value << endl;
+							outputAccumulator.push_back(statement.tokens[j + 1].value);
 							j += 3;
-							
 						}
 						else
 						{
 							outputExpression.push_back(statement.tokens[j]);
 							j++;
 						}
-
-						
 					}
 					i = j;
 				}
@@ -1901,7 +1898,7 @@ void interOut(vector<Statement> *statements)
 	if (file.is_open())
 	{
 		for (int j = 0; j < outputAccumulator.size(); j++)
-		{	
+		{
 			// cout << " debug reach " << outputAccumulator[j] << endl;
 			file << outputAccumulator[j] << endl;
 		}
@@ -1948,7 +1945,10 @@ int main()
 
 			printErrors(errors);
 
-			interOut(&statements);
+			if (errors.size() == 0)
+			{
+				interOut(&statements);
+			}
 		}
 		else
 		{
