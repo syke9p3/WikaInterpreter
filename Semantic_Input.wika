@@ -1,12 +1,15 @@
-int x, y = 1 + 2 - 3, z = "hello" + 7;
-c = 4;
-string greetings = "hello" + 1;
-int x = 1;
-int y = 2 + 3 + 5;
-c = a + b;
-int a = x + y, z = 1 + a + b;
-int y = 2, y;
-int z;
-y = kunin();
-tignan(greetings);
-tignan("world");
+
+int repeat;
+float repeat;
+int x = 30 + 1.5;
+int x = 9 + "Hello";
+y = x + 4;
+
+int keyword = habang + 1; 
+int b;
+b = x + 8;
+
+
+string name = "hello"; 
+int age = 1 + year, a;
+year = age;

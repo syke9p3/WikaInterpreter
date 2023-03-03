@@ -724,6 +724,7 @@ Statement parseExpression(vector<Token> *tokens, int *i)
 		{
 			expression.validity = false;
 			expression.message = "Expected expression " + but_got(currentToken);
+			errors.push_back({expression.line, expression.message});
 		}
 	}
 	else if (currentToken.value == ";")
@@ -751,6 +752,7 @@ Statement parseExpression(vector<Token> *tokens, int *i)
 	{
 		expression.validity = false;
 		expression.message = "Expected expression " + but_got(currentToken);
+		errors.push_back({expression.line, expression.message});
 	}
 
 	parse_rest(tokens, &expression, &j);
@@ -1610,7 +1612,7 @@ void analyze(vector<Statement> *statements)
 								}
 								else
 								{
-									cout << "Line " << statement.line << " : Invalid conversion from '" << dataType << "' to '" << var.type << "'"<< endl;
+									cout << "Line " << statement.line << " : Invalid conversion from '" << dataType << "' to '" << var.type << "'" << endl;
 									statement.message = "Invalid conversion from '" + dataType + "' to '" + var.type + "'";
 									errors.push_back({statement.line, statement.message});
 								}
@@ -1626,9 +1628,9 @@ void analyze(vector<Statement> *statements)
 				}
 			}
 		}
-	}
 
-	symbol_table = solveVariables(symbol_table);
+		symbol_table = solveVariables(symbol_table);
+	}
 
 	cout << "\n\n"
 		 << "VARIABLE SYMBOL TABLE CONTENTS: " << endl;
@@ -1735,7 +1737,7 @@ map<string, Variable> solveVariables(map<string, Variable> symbol_table) // upda
 			var.value = solveExpression(var.expression);
 
 			symbol_table[declaredVariables[i].name].value = var.value;
-			cout << "debug value of " << declaredVariables[i].name << " = " << symbol_table[declaredVariables[i].name].value << endl;
+			// cout << "debug value of " << declaredVariables[i].name << " = " << symbol_table[declaredVariables[i].name].value << endl;
 		}
 	}
 

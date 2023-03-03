@@ -1,17 +1,16 @@
 
 LINE			INDEX			TOKENS				MESSAGE			
-1	int x , y = 1 + 2 - 3 , ; Valid			
-2	c = 4 ; Valid			
-3	string greetings = " hello " + 1 ; Valid			
-4	int x = 1 ; Valid			
-5	int y = 2 + 3 + 5 ; Valid			
-6	c = a + b ; Valid			
-7	int a = x + y , ; Valid			
-8	int y = 2 , ; Valid			
-9	int z ; Valid			
-10	y = Invalid			Expected constant/expressionbut got keyword 'kunin'
-10	Invalid			Unexpected token  '('
-10	Invalid			Unexpected token  ')'
-10	Valid			
-11	tignan ( greetings ) ; Valid			
-12	tignan ( " world " ) ; Valid			
+2	int repeat ; Valid			
+3	float repeat ; Valid			
+4	int x = 30 + 1.5 ; Valid			
+5	int x = 9 + " Hello " ; Valid			
+6	y = x + 4 ; Valid			
+8	int Invalid			Expected expression but got keyword 'habang'
+8	Invalid			Unexpected token  '+'
+8	Invalid			Unexpected token constant '1'
+8	Valid			
+9	int b ; Valid			
+10	b = x + 8 ; Valid			
+13	string name = " hello " ; Valid			
+14	int age = 1 + year , ; Valid			
+15	year = age ; Valid			
